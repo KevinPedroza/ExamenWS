@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://tempuri.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="WSMeteorologicoService" targetNamespace="http://tempuri.org/" xmlns="http://schemas.xmlsoap.org/wsdl/">
+  <types>
+    <xsd:schema>
+      <xsd:import schemaLocation="https://www.imn.ac.cr:443/PORTAL_IMN_WS/WSMeteorologicoSoap?xsd=1" namespace="http://tempuri.org/" />
+    </xsd:schema>
+  </types>
+  <message name="pronosticoPorCiudad">
+    <part name="pronosticoPorCiudad" element="tns:pronosticoPorCiudad" />
+  </message>
+  <message name="pronosticoPorCiudadResponse">
+    <part name="pronosticoPorCiudadResponse" element="tns:pronosticoPorCiudadResponse" />
+  </message>
+  <message name="estadoActualPorCiudad">
+    <part name="estadoActualPorCiudad" element="tns:estadoActualPorCiudad" />
+  </message>
+  <message name="estadoActualPorCiudadResponse">
+    <part name="estadoActualPorCiudadResponse" element="tns:estadoActualPorCiudadResponse" />
+  </message>
+  <message name="pronosticoPorCiudadxID">
+    <part name="pronosticoPorCiudadxID" element="tns:pronosticoPorCiudadxID" />
+  </message>
+  <message name="pronosticoPorCiudadxIDResponse">
+    <part name="pronosticoPorCiudadxIDResponse" element="tns:pronosticoPorCiudadxIDResponse" />
+  </message>
+  <message name="pronosticoRegional">
+    <part name="pronosticoRegional" element="tns:pronosticoRegional" />
+  </message>
+  <message name="pronosticoRegionalResponse">
+    <part name="pronosticoRegionalResponse" element="tns:pronosticoRegionalResponse" />
+  </message>
+  <message name="pronosticoRegionalxID">
+    <part name="pronosticoRegionalxID" element="tns:pronosticoRegionalxID" />
+  </message>
+  <message name="pronosticoRegionalxIDResponse">
+    <part name="pronosticoRegionalxIDResponse" element="tns:pronosticoRegionalxIDResponse" />
+  </message>
+  <message name="pronosticoExtendidoCiudad">
+    <part name="pronosticoExtendidoCiudad" element="tns:pronosticoExtendidoCiudad" />
+  </message>
+  <message name="pronosticoExtendidoCiudadResponse">
+    <part name="pronosticoExtendidoCiudadResponse" element="tns:pronosticoExtendidoCiudadResponse" />
+  </message>
+  <message name="pronosticoExtendidoCiudadxID">
+    <part name="pronosticoExtendidoCiudadxID" element="tns:pronosticoExtendidoCiudadxID" />
+  </message>
+  <message name="pronosticoExtendidoCiudadxIDResponse">
+    <part name="pronosticoExtendidoCiudadxIDResponse" element="tns:pronosticoExtendidoCiudadxIDResponse" />
+  </message>
+  <message name="pronosticoExtendidoRegion">
+    <part name="pronosticoExtendidoRegion" element="tns:pronosticoExtendidoRegion" />
+  </message>
+  <message name="pronosticoExtendidoRegionResponse">
+    <part name="pronosticoExtendidoRegionResponse" element="tns:pronosticoExtendidoRegionResponse" />
+  </message>
+  <message name="pronosticoExtendidoRegionxID">
+    <part name="pronosticoExtendidoRegionxID" element="tns:pronosticoExtendidoRegionxID" />
+  </message>
+  <message name="pronosticoExtendidoRegionxIDResponse">
+    <part name="pronosticoExtendidoRegionxIDResponse" element="tns:pronosticoExtendidoRegionxIDResponse" />
+  </message>
+  <message name="efemerides">
+    <part name="efemerides" element="tns:efemerides" />
+  </message>
+  <message name="efemeridesResponse">
+    <part name="efemeridesResponse" element="tns:efemeridesResponse" />
+  </message>
+  <message name="fecha">
+    <part name="fecha" element="tns:fecha" />
+  </message>
+  <message name="fechaResponse">
+    <part name="fechaResponse" element="tns:fechaResponse" />
+  </message>
+  <message name="hora">
+    <part name="hora" element="tns:hora" />
+  </message>
+  <message name="horaResponse">
+    <part name="horaResponse" element="tns:horaResponse" />
+  </message>
+  <message name="estadoActualRegional">
+    <part name="estadoActualRegional" element="tns:estadoActualRegional" />
+  </message>
+  <message name="estadoActualRegionalResponse">
+    <part name="estadoActualRegionalResponse" element="tns:estadoActualRegionalResponse" />
+  </message>
+  <portType name="WSMeteorologico">
+    <operation name="pronosticoPorCiudad">
+      <input message="tns:pronosticoPorCiudad" />
+      <output message="tns:pronosticoPorCiudadResponse" />
+    </operation>
+    <operation name="estadoActualPorCiudad">
+      <input message="tns:estadoActualPorCiudad" />
+      <output message="tns:estadoActualPorCiudadResponse" />
+    </operation>
+    <operation name="pronosticoPorCiudadxID">
+      <input message="tns:pronosticoPorCiudadxID" />
+      <output message="tns:pronosticoPorCiudadxIDResponse" />
+    </operation>
+    <operation name="pronosticoRegional">
+      <input message="tns:pronosticoRegional" />
+      <output message="tns:pronosticoRegionalResponse" />
+    </operation>
+    <operation name="pronosticoRegionalxID">
+      <input message="tns:pronosticoRegionalxID" />
+      <output message="tns:pronosticoRegionalxIDResponse" />
+    </operation>
+    <operation name="pronosticoExtendidoCiudad">
+      <input message="tns:pronosticoExtendidoCiudad" />
+      <output message="tns:pronosticoExtendidoCiudadResponse" />
+    </operation>
+    <operation name="pronosticoExtendidoCiudadxID">
+      <input message="tns:pronosticoExtendidoCiudadxID" />
+      <output message="tns:pronosticoExtendidoCiudadxIDResponse" />
+    </operation>
+    <operation name="pronosticoExtendidoRegion">
+      <input message="tns:pronosticoExtendidoRegion" />
+      <output message="tns:pronosticoExtendidoRegionResponse" />
+    </operation>
+    <operation name="pronosticoExtendidoRegionxID">
+      <input message="tns:pronosticoExtendidoRegionxID" />
+      <output message="tns:pronosticoExtendidoRegionxIDResponse" />
+    </operation>
+    <operation name="efemerides">
+      <input message="tns:efemerides" />
+      <output message="tns:efemeridesResponse" />
+    </operation>
+    <operation name="fecha">
+      <input message="tns:fecha" />
+      <output message="tns:fechaResponse" />
+    </operation>
+    <operation name="hora">
+      <input message="tns:hora" />
+      <output message="tns:horaResponse" />
+    </operation>
+    <operation name="estadoActualRegional">
+      <input message="tns:estadoActualRegional" />
+      <output message="tns:estadoActualRegionalResponse" />
+    </operation>
+  </portType>
+  <binding name="WSMeteorologicoBinding" type="tns:WSMeteorologico">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <operation name="pronosticoPorCiudad">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="estadoActualPorCiudad">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="pronosticoPorCiudadxID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="pronosticoRegional">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="pronosticoRegionalxID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="pronosticoExtendidoCiudad">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="pronosticoExtendidoCiudadxID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="pronosticoExtendidoRegion">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="pronosticoExtendidoRegionxID">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="efemerides">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="fecha">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="hora">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+    <operation name="estadoActualRegional">
+      <soap:operation soapAction="" />
+      <input>
+        <soap:body use="literal" />
+      </input>
+      <output>
+        <soap:body use="literal" />
+      </output>
+    </operation>
+  </binding>
+  <service name="WSMeteorologicoService">
+    <port name="WSMeteorologico" binding="tns:WSMeteorologicoBinding">
+      <soap:address location="https://www.imn.ac.cr:443/PORTAL_IMN_WS/WSMeteorologicoSoap" />
+    </port>
+  </service>
+</definitions>
